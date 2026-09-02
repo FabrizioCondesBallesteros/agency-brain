@@ -5,7 +5,7 @@
 
 <div align="center">
 
-<img src="./docs/assets/agency-brain-hero.png" alt="Agency Brain" width="520"/>
+<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTIwIiBoZWlnaHQ9IjUyMCIgdmlld0JveD0iMCAwIDUyMCA1MjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUyMCIgaGVpZ2h0PSI1MjAiIGZpbGw9IiMwQjBGMTciLz48Y2lyY2xlIGN4PSIyNjAiIGN5PSIxNjAiIHI9IjEyMCIgZmlsbD0iIzAwRTVDNCIgb3BhY2l0eT0iMC45Ii8+PHBhdGggZD0iTTIyMCAyMjAgTDMwMCAyMjAgTDMwMCAzMDAgTDIyMCAzMDAgWiIgZmlsbD0iIzBCMEYxNyIgc3Ryb2tlPSIjMDBEOUZGIiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSI0MjAiIGN5PSIzNjAiIHI9IjYwIiBmaWxsPSIjMDBENjlGIiBvcGFjaXR5PSIwLjgiLz48cmVjdCB4PSIxMjAiIHk9IjM2MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzAwRTVDNCIgb3BhY2l0eT0iMC43Ii8+PC9zdmc+" alt="Agency Brain" width="520"/>
 
 # Agency Brain 🧠
 
@@ -25,9 +25,9 @@
 <br>
 
 [![GitHub stars](https://img.shields.io/github/stars/FabrizioCondesBallesteros/agency-brain?style=flat-square&logo=github&label=STARS)](https://github.com/FabrizioCondesBallesteros/agency-brain/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/FabrizioCondesBallesteros/agency-brain?style=flat-square&logo=github&label=FORKS)](https://github.com/FabrizioCondesBallesteros/agency-brain/network/members)
+[![GitHub forks](https://img.shields.io/github/forks/FabrizioCondesBallesteros/agency-brain?style=flat-square&logo=github&label=FORKS)](https://github.com/FabrizioCondesBallesteros/agency-brain/network)
 [![GitHub issues](https://img.shields.io/github/issues/FabrizioCondesBallesteros/agency-brain?style=flat-square&logo=github&label=ISSUES)](https://github.com/FabrizioCondesBallesteros/agency-brain/issues)
-[![Last commit](https://img.shields.io/github/last-commit/FabrizioCondesBallesteros/agency-brain?style=flat-square&logo=git&label=LAST%20COMMIT)](https://github.com/FabrizioCondesBallesteros/agency-brain/commits)
+[![Last commit](https://img.shields.io/github/last-commit/FabrizioCondesBallesteros/agency-brain?style=flat-square&logo=git&label=LAST%20COMMIT)](https://github.com/FabrizioCondesBallesteros/agency-brain)
 [![Repo size](https://img.shields.io/github/repo-size/FabrizioCondesBallesteros/agency-brain?style=flat-square&logo=github&label=SIZE)](https://github.com/FabrizioCondesBallesteros/agency-brain)
 
 <br>
@@ -115,8 +115,15 @@ update state
 continue
 
 Agency Brain is designed around that final direction.
+```
 
-🧠 The Idea
+---
+
+# 🧠 Core Concept
+
+## The Idea
+
+```
                  ┌─────────────────────┐
                  │        USER         │
                  └──────────┬──────────┘
@@ -158,57 +165,57 @@ Agency Brain is designed around that final direction.
                   │ Calendar · storage  │
                   │ external services   │
                   └─────────────────────┘
-🔥 Why Agency Brain?
+```
+
+## Why Agency Brain?
 
 Modern AI development often begins like this:
 
+```python
 response = llm.invoke(prompt)
+```
 
-That is useful.
+That is useful. But a real agentic system quickly needs much more:
 
-But a real agentic system quickly needs much more:
+- Who is the user?
+- What happened yesterday?
+- What does this agent know?
+- Which information should be remembered?
+- Which tool should be called?
+- Which actions require approval?
+- What happens if a tool fails?
+- Which model should handle the task?
+- How does an agent maintain state?
+- How does it communicate with another service?
+- How do we replace one provider without rewriting everything?
 
-Who is the user?
+Agency Brain exists to explore those questions as **software architecture problems**, not just prompting problems.
 
-What happened yesterday?
+---
 
-What does this agent know?
+## 🧩 Core Philosophy
 
-Which information should be remembered?
+| Principle | Meaning |
+|-----------|---------|
+| **Modularity** | Core capabilities should be interchangeable |
+| **Persistence** | Agents should retain useful state across sessions |
+| **Separation of Concerns** | Memory, tools, models and rules should not become one monolithic layer |
+| **Provider Independence** | The architecture should not depend permanently on one LLM |
+| **Tool-First Design** | Agents become valuable when they can interact with systems |
+| **Human Authority** | Sensitive or irreversible actions should preserve human control |
+| **Observability** | Agent actions should be inspectable |
+| **Composable Intelligence** | Specialized capabilities should combine cleanly |
+| **Production Thinking** | Experiments should evolve toward reusable systems |
 
-Which tool should be called?
+---
 
-Which actions require approval?
+# 🤖 Agentic Core
 
-What happens if a tool fails?
-
-Which model should handle the task?
-
-How does an agent maintain state?
-
-How does it communicate with another service?
-
-How do we replace one provider without rewriting everything?
-
-Agency Brain exists to explore those questions as software architecture problems, not just prompting problems.
-
-🧩 Core Philosophy
-Principle	Meaning
-Modularity	Core capabilities should be interchangeable
-Persistence	Agents should retain useful state across sessions
-Separation of concerns	Memory, tools, models and rules should not become one monolithic layer
-Provider independence	The architecture should not depend permanently on one LLM
-Tool-first design	Agents become valuable when they can interact with systems
-Human authority	Sensitive or irreversible actions should preserve human control
-Observability	Agent actions should be inspectable
-Composable intelligence	Specialized capabilities should combine cleanly
-Production thinking	Experiments should evolve toward reusable systems
-🤖 Agentic Core
-
-At the center of Agency Brain is the Agent Layer.
+At the center of Agency Brain is the **Agent Layer**.
 
 An agent receives:
 
+```
 context
 +
 instructions
@@ -218,11 +225,13 @@ memory
 available tools
 +
 business rules
+```
 
 and determines an appropriate execution path.
 
 Conceptually:
 
+```python
 result = agent.run(
     input=user_input,
     memory=memory,
@@ -230,28 +239,31 @@ result = agent.run(
     rules=rules,
     session=session
 )
+```
 
-The agent should not need to know the implementation details of every subsystem.
+The agent should not need to know the implementation details of every subsystem. That responsibility belongs to the architecture.
 
-That responsibility belongs to the architecture.
+---
 
-🧠 Memory & Knowledge
+# 🧠 Memory & Knowledge
 
-Memory is treated as a first-class subsystem.
+Memory is treated as a **first-class subsystem**.
 
 Agency Brain explores multiple forms of memory:
 
-Memory Type	Purpose
-Conversation Memory	Recent interaction context
-Persistent Memory	Information retained between sessions
-Semantic Memory	Knowledge retrieved through similarity
-Vector Memory	Embedding-based recall
-Session State	Current workflow / execution state
-User Context	Relevant long-term information
-Knowledge Base	External documents and structured information
+| Memory Type | Purpose |
+|-------------|---------|
+| **Conversation Memory** | Recent interaction context |
+| **Persistent Memory** | Information retained between sessions |
+| **Semantic Memory** | Knowledge retrieved through similarity |
+| **Vector Memory** | Embedding-based recall |
+| **Session State** | Current workflow / execution state |
+| **User Context** | Relevant long-term information |
+| **Knowledge Base** | External documents and structured information |
 
-Potential flow:
+### Memory Flow
 
+```
 User message
     ↓
 Memory lookup
@@ -265,20 +277,23 @@ Tool / response
 Memory evaluation
     ↓
 Persistent storage
+```
 
-Not everything should be remembered.
+Not everything should be remembered. An intelligent memory architecture must determine:
 
-An intelligent memory architecture must determine:
+- what to store
+- what to ignore
+- what to retrieve
+- when to retrieve it
+- when to forget it
 
-what to store
-what to ignore
-what to retrieve
-when to retrieve it
-when to forget it
-📚 RAG
+---
 
-Agency Brain can integrate Retrieval-Augmented Generation patterns.
+## 📚 RAG
 
+Agency Brain can integrate **Retrieval-Augmented Generation** patterns:
+
+```
 Documents
     ↓
 Processing
@@ -296,28 +311,33 @@ Relevant Context
 LLM
     ↓
 Grounded Response
+```
 
 RAG can support:
 
-private knowledge bases
-documentation assistants
-company information
-technical knowledge
-persistent agent knowledge
-contextual decision systems
-domain-specific agents
-🛠️ Tools
+- private knowledge bases
+- documentation assistants
+- company information
+- technical knowledge
+- persistent agent knowledge
+- contextual decision systems
+- domain-specific agents
+
+---
+
+# 🛠️ Tools
 
 Tools allow agents to move from:
 
-"I can tell you how to do it."
+> "I can tell you how to do it."
 
 to:
 
-"I can do it."
+> "I can do it."
 
-Examples:
+### Examples
 
+```python
 search()
 send_message()
 read_calendar()
@@ -327,37 +347,47 @@ retrieve_memory()
 run_script()
 call_api()
 generate_document()
+```
 
 The architecture aims for a centralized registry:
 
+```python
 tool_registry.register(calendar_tool)
 tool_registry.register(memory_tool)
 tool_registry.register(search_tool)
+```
 
-allowing agents to discover capabilities without hardcoding every integration.
+Allowing agents to discover capabilities without hardcoding every integration.
 
-🔌 Integrations
+---
 
-Agency Brain is designed to interact with external systems.
+# 🔌 Integrations
+
+Agency Brain is designed to interact with **external systems**.
 
 Potential and experimental integration targets include:
 
-Integration	Purpose
-Hermes Agent	Agent runtime / experimentation
-Telegram	User interaction channel
-Google Calendar	Scheduling and calendar operations
-SQLite	Persistent local storage
-Vector Databases	Semantic memory and RAG
-REST APIs	External services
-LLM APIs	Reasoning / generation providers
-Docker	Portable environments
-Cloud Infrastructure	Remote deployment
-🧠 Provider Layer
+| Integration | Purpose |
+|-------------|---------|
+| **Hermes Agent** | Agent runtime / experimentation |
+| **Telegram** | User interaction channel |
+| **Google Calendar** | Scheduling and calendar operations |
+| **SQLite** | Persistent local storage |
+| **Vector Databases** | Semantic memory and RAG |
+| **REST APIs** | External services |
+| **LLM APIs** | Reasoning / generation providers |
+| **Docker** | Portable environments |
+| **Cloud Infrastructure** | Remote deployment |
 
-The LLM should be treated as a provider — not as the entire application.
+---
+
+# 🧠 Provider Layer
+
+The **LLM should be treated as a provider** — not as the entire application.
 
 Conceptually:
 
+```
 Agent
   │
   ▼
@@ -368,23 +398,29 @@ Provider Interface
   ├── Gemini
   ├── Local Model
   └── Future Provider
+```
 
 This reduces architectural coupling.
 
 Example abstraction:
 
+```python
 class LLMProvider:
     def generate(self, messages):
         ...
+```
 
 The rest of the system should ideally remain stable even when the underlying model changes.
 
-🔄 Sessions
+---
 
-Agents need continuity.
+# 🔄 Sessions
+
+Agents need **continuity**.
 
 A session can hold:
 
+```
 session_id
 user_id
 agent_id
@@ -394,9 +430,11 @@ memory_refs
 active_tools
 execution_state
 timestamps
+```
 
 Conceptually:
 
+```
 User
  ↓
 Session Manager
@@ -408,22 +446,21 @@ Existing session?
 Agent execution
  ↓
 persist state
-⚖️ Business Rules
+```
 
-LLMs are probabilistic.
+---
 
-Business constraints should not always be.
+# ⚖️ Business Rules
+
+**LLMs are probabilistic.** Business constraints should not always be.
 
 Agency Brain therefore separates:
 
-AI reasoning
-
-from:
-
-deterministic rules
+**AI reasoning** from **deterministic rules**
 
 Examples:
 
+```python
 if action.requires_confirmation:
     request_user_approval()
 
@@ -432,25 +469,30 @@ if user_role != "admin":
 
 if transaction_amount > limit:
     escalate()
+```
 
 This enables safer and more predictable agent behavior.
 
-🏗️ Architecture
+---
+
+# 🏗️ Architecture
 
 The current conceptual architecture is divided into:
 
-Layer	Responsibility
-Agent	Agent behavior and execution
-Memory	Persistent and semantic context
-Tools	Capabilities exposed to agents
-Providers	LLM / model abstraction
-Sessions	Stateful interactions
-Rules	Deterministic constraints
-Integrations	External applications and APIs
-Config	Environment and runtime configuration
+| Layer | Responsibility |
+|-------|-----------------|
+| **Agent** | Agent behavior and execution |
+| **Memory** | Persistent and semantic context |
+| **Tools** | Capabilities exposed to agents |
+| **Providers** | LLM / model abstraction |
+| **Sessions** | Stateful interactions |
+| **Rules** | Deterministic constraints |
+| **Integrations** | External applications and APIs |
+| **Config** | Environment and runtime configuration |
 
-Potential structure:
+### Potential Structure
 
+```
 agency-brain/
 │
 ├── app/
@@ -490,8 +532,6 @@ agency-brain/
 │
 ├── docs/
 │   ├── assets/
-│   │   └── agency-brain-hero.png
-│   │
 │   ├── architecture.md
 │   ├── agents.md
 │   ├── memory.md
@@ -514,75 +554,71 @@ agency-brain/
 ├── pyproject.toml
 ├── README.md
 └── LICENSE
-✨ Capabilities
-Capability	Description	Status
-🧠 Agent Architecture	Reusable agent-oriented architecture	✅
-🗂️ Session Management	Persistent conversational sessions	🚧
-🧠 Persistent Memory	Cross-session memory	🚧
-🔎 Semantic Memory	Embedding-based retrieval	🧪
-📚 RAG	Knowledge retrieval pipelines	🧪
-🛠 Tool Registry	Centralized agent tools	🚧
-🧩 Provider Abstraction	Decoupled model provider layer	🚧
-⚖ Business Rules	Deterministic system constraints	🚧
-🔌 External Integrations	APIs and external systems	🧪
-🐳 Docker	Containerized development	✅
-📱 Telegram	Messaging integration	📋
-📅 Calendar	Scheduling integration	📋
-☁️ Cloud Deployment	Remote runtime	📋
-🤝 Multi-Agent	Agent collaboration	🔬
-Status Legend
-Symbol	Meaning
-✅	Implemented
-🚧	In progress
-🧪	Experimental
-📋	Planned
-🔬	Research
+```
 
-Statuses should be updated as the implementation evolves.
+---
 
-🧬 Technology Landscape
-<div align="center">
+# ✨ Capabilities
 
+| Capability | Description | Status |
+|------------|-------------|--------|
+| 🧠 Agent Architecture | Reusable agent-oriented architecture | ✅ |
+| 🗂️ Session Management | Persistent conversational sessions | 🚧 |
+| 🧠 Persistent Memory | Cross-session memory | 🚧 |
+| 🔎 Semantic Memory | Embedding-based retrieval | 🧪 |
+| 📚 RAG | Knowledge retrieval pipelines | 🧪 |
+| 🛠 Tool Registry | Centralized agent tools | 🚧 |
+| 🧩 Provider Abstraction | Decoupled model provider layer | 🚧 |
+| ⚖ Business Rules | Deterministic system constraints | 🚧 |
+| 🔌 External Integrations | APIs and external systems | 🧪 |
+| 🐳 Docker | Containerized development | ✅ |
+| 📱 Telegram | Messaging integration | 📋 |
+| 📅 Calendar | Scheduling integration | 📋 |
+| ☁️ Cloud Deployment | Remote runtime | 📋 |
+| 🤝 Multi-Agent | Agent collaboration | 🔬 |
 
+**Status Legend**
 
+| Symbol | Meaning |
+|--------|---------|
+| ✅ | Implemented |
+| 🚧 | In progress |
+| 🧪 | Experimental |
+| 📋 | Planned |
+| 🔬 | Research |
 
+---
 
+# 🚀 Quick Start
 
+## Requirements
 
+**Recommended:**
 
+- Python >= 3.11
+- Git
+- Docker
+- Docker Compose
+- uv
 
+## Clone
 
-
-
-
-
-
-
-
-
-
-</div>
-🚀 Quick Start
-Requirements
-
-Recommended:
-
-Python >= 3.11
-Git
-Docker
-Docker Compose
-uv
-Clone
+```bash
 git clone https://github.com/FabrizioCondesBallesteros/agency-brain.git
 cd agency-brain
-Environment
+```
+
+## Environment
 
 Create your local environment file:
 
+```bash
 cp .env.example .env
+```
 
-Example:
+**Example:**
 
+```bash
 # ====================================
 # Agency Brain
 # ====================================
@@ -611,93 +647,125 @@ TELEGRAM_BOT_TOKEN=
 # Google
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
+```
 
-Never commit secrets.
+**Never commit secrets.**
 
-📦 Installation
+## Installation
 
-Using uv:
+### Using uv
 
+```bash
 uv sync
+```
 
 Activate environment if required:
 
+```bash
 source .venv/bin/activate
+```
 
-Windows:
+**Windows:**
 
+```bash
 .venv\Scripts\Activate.ps1
+```
 
-Alternative:
+### Alternative
 
+```bash
 pip install -e .
-▶️ Run
+```
 
-Example:
+## Run
 
+```bash
 python -m app
+```
 
-or:
+Or:
 
+```bash
 uv run python -m app
-🐳 Docker
+```
 
-Build:
+## Docker
 
+### Build
+
+```bash
 docker build -t agency-brain .
+```
 
-Run:
+### Run
 
+```bash
 docker run --env-file .env agency-brain
+```
 
-With Compose:
+### With Compose
 
+```bash
 docker compose up --build
+```
 
-Background:
+**Background:**
 
+```bash
 docker compose up -d
+```
 
-Stop:
+**Stop:**
 
+```bash
 docker compose down
+```
 
-Logs:
+**Logs:**
 
+```bash
 docker compose logs -f
-🧪 Testing
+```
+
+## Testing
 
 Run the test suite:
 
+```bash
 pytest
+```
 
-Verbose:
+**Verbose:**
 
+```bash
 pytest -v
+```
 
-Coverage:
+**Coverage:**
 
+```bash
 pytest --cov=app
+```
 
-Target areas:
+---
 
-agents
-memory
-tools
-providers
-sessions
-integrations
-business rules
-🧰 Development Commands
-Task	Command
-Install	uv sync
-Run	uv run python -m app
-Tests	uv run pytest
-Docker Build	docker compose build
-Docker Run	docker compose up
-Stop	docker compose down
-Logs	docker compose logs -f
-🧪 Example Agent Flow
+# 🧰 Development Commands
+
+| Task | Command |
+|------|---------|
+| Install | `uv sync` |
+| Run | `uv run python -m app` |
+| Tests | `uv run pytest` |
+| Docker Build | `docker compose build` |
+| Docker Run | `docker compose up` |
+| Stop | `docker compose down` |
+| Logs | `docker compose logs -f` |
+
+---
+
+# 🧪 Example Agent Flow
+
+```
 USER
  │
  │ "Schedule a meeting with Alex next week."
@@ -729,52 +797,54 @@ MEMORY
  └── Store useful interaction context
  ▼
 USER
+```
 
 This is the type of workflow Agency Brain aims to make reusable.
 
-🧠 Specialized Agents
+---
+
+# 🧠 Specialized Agents
 
 The architecture can evolve toward multiple specialized agents:
 
+```
 Agency Brain
 │
 ├── Personal Agent
-│
 ├── Calendar Agent
-│
 ├── Research Agent
-│
 ├── Career Agent
-│
 ├── Data Agent
-│
 ├── Fitness Agent
-│
 ├── Automation Agent
-│
 └── Custom Agents
+```
 
 Every agent can potentially share:
 
-memory
-providers
-tools
-identity
-authentication
-sessions
-infrastructure
+- memory
+- providers
+- tools
+- identity
+- authentication
+- sessions
+- infrastructure
 
-while maintaining its own:
+While maintaining its own:
 
-rules
-objectives
-skills
-context
-workflows
-🕸 Multi-Agent Direction
+- rules
+- objectives
+- skills
+- context
+- workflows
+
+---
+
+# 🕸 Multi-Agent Direction
 
 Future architecture may support:
 
+```
                     ORCHESTRATOR
                          │
        ┌─────────────────┼─────────────────┐
@@ -789,15 +859,17 @@ Future architecture may support:
                          │
                          ▼
                      TOOL LAYER
+```
 
-The project does not assume that every problem needs multiple agents.
+The project does not assume that every problem needs multiple agents. Multi-agent systems should be used only when specialization provides measurable value.
 
-Multi-agent systems should be used only when specialization provides measurable value.
+---
 
-🧠 Memory Strategy
+# 🧠 Memory Strategy
 
 A possible memory hierarchy:
 
+```
 L0 — Working Context
 │
 ├── immediate conversation
@@ -826,26 +898,30 @@ L4 — External Knowledge
     ├── documents
     ├── databases
     └── APIs
+```
 
 Different information deserves different retention policies.
 
-🔐 Security Principles
+---
+
+# 🔐 Security Principles
 
 Agent systems require explicit trust boundaries.
 
 Agency Brain should follow principles such as:
 
-secrets never committed to repositories
-environment-based credentials
-minimum required permissions
-confirmation before high-impact actions
-tool-level authorization
-input validation
-auditability
-clear separation between reasoning and execution
+- secrets never committed to repositories
+- environment-based credentials
+- minimum required permissions
+- confirmation before high-impact actions
+- tool-level authorization
+- input validation
+- auditability
+- clear separation between reasoning and execution
 
 Conceptually:
 
+```
 Agent wants action
       ↓
 Tool policy
@@ -857,170 +933,189 @@ Risk classification
 Confirmation if required
       ↓
 Execution
-👁 Observability
+```
 
-Agentic software must be inspectable.
+---
+
+# 👁 Observability
+
+Agentic software must be **inspectable**.
 
 Useful signals include:
 
-session
-agent
-model
-tool
-latency
-tokens
-memory retrieval
-errors
-tool arguments
-tool results
-execution path
+- session
+- agent
+- model
+- tool
+- latency
+- tokens
+- memory retrieval
+- errors
+- tool arguments
+- tool results
+- execution path
 
 Future instrumentation may include:
 
-structured logs
-execution traces
-model telemetry
-tool latency
-token usage
-memory retrieval metrics
-error tracking
-📊 Evaluation
+- structured logs
+- execution traces
+- model telemetry
+- tool latency
+- token usage
+- memory retrieval metrics
+- error tracking
 
-Agents should be measured by outcomes rather than demos.
+---
+
+# 📊 Evaluation
+
+Agents should be measured by **outcomes** rather than demos.
 
 Possible metrics:
 
-Metric	Question
-Task Success	Did the agent accomplish the objective?
-Tool Accuracy	Did it choose the correct tool?
-Retrieval Quality	Was relevant memory retrieved?
-Latency	How long did execution take?
-Cost	How expensive was the run?
-Reliability	Does the workflow behave consistently?
-Intervention Rate	How often was human correction required?
-🗺 Roadmap
-Phase 0 — Architecture
- Define project direction
- Define Core / Agent / Tool / Provider responsibilities
- Establish modular architecture principles
- Create repository foundation
-Phase 1 — Environment
- GitHub repository
- Development environment
- Docker experimentation
- Hermes integration research
- Provider experimentation
- Stable reproducible setup
-Phase 2 — Core Framework
- Agent Interface
- Memory Layer
- Tool Registry
- Business Rules
- LLM Provider
- Session Manager
- Configuration Layer
-Phase 3 — First Real Agent
- Telegram interface
- Google Calendar
- Persistent storage
- Tool execution
- Session continuity
- Real user workflow
-Phase 4 — Intelligence Layer
- Semantic memory
- Vector retrieval
- RAG
- Dynamic tool selection
- Structured planning
- Context management
-Phase 5 — Agent Platform
- Specialized agents
- Shared memory
- Shared tool registry
- Agent orchestration
- Agent permissions
- Workflow engine
-Phase 6 — Production
- Cloud deployment
- Observability
- Authentication
- Authorization
- Security hardening
- Automated testing
- CI/CD
- Monitoring
- Failure recovery
-💡 Potential Use Cases
+| Metric | Question |
+|--------|----------|
+| **Task Success** | Did the agent accomplish the objective? |
+| **Tool Accuracy** | Did it choose the correct tool? |
+| **Retrieval Quality** | Was relevant memory retrieved? |
+| **Latency** | How long did execution take? |
+| **Cost** | How expensive was the run? |
+| **Reliability** | Does the workflow behave consistently? |
+| **Intervention Rate** | How often was human correction required? |
+
+---
+
+# 🗺 Roadmap
+
+### Phase 0 — Architecture
+
+- Define project direction
+- Define Core / Agent / Tool / Provider responsibilities
+- Establish modular architecture principles
+- Create repository foundation
+
+### Phase 1 — Environment
+
+- GitHub repository
+- Development environment
+- Docker experimentation
+- Hermes integration research
+- Provider experimentation
+- Stable reproducible setup
+
+### Phase 2 — Core Framework
+
+- Agent Interface
+- Memory Layer
+- Tool Registry
+- Business Rules
+- LLM Provider
+- Session Manager
+- Configuration Layer
+
+### Phase 3 — First Real Agent
+
+- Telegram interface
+- Google Calendar
+- Persistent storage
+- Tool execution
+- Session continuity
+- Real user workflow
+
+### Phase 4 — Intelligence Layer
+
+- Semantic memory
+- Vector retrieval
+- RAG
+- Dynamic tool selection
+- Structured planning
+- Context management
+
+### Phase 5 — Agent Platform
+
+- Specialized agents
+- Shared memory
+- Shared tool registry
+- Agent orchestration
+- Agent permissions
+- Workflow engine
+
+### Phase 6 — Production
+
+- Cloud deployment
+- Observability
+- Authentication
+- Authorization
+- Security hardening
+- Automated testing
+- CI/CD
+- Monitoring
+- Failure recovery
+
+---
+
+# 💡 Potential Use Cases
 
 Agency Brain can serve as the architectural foundation for:
 
-Personal AI Assistant
+### Personal AI Assistant
 
 Persistent personal agent capable of remembering context and interacting with external services.
 
-Career Operator
+### Career Operator
 
 Agent capable of researching opportunities, evaluating companies, organizing applications and preparing outreach.
 
-Knowledge Assistant
+### Knowledge Assistant
 
 RAG-powered assistant grounded in private documentation.
 
-Business Automation Agent
+### Business Automation Agent
 
 Agent connected to internal tools and operational workflows.
 
-SaaS AI Layer
+### SaaS AI Layer
 
 Reusable agent capabilities embedded into a larger software product.
 
-Research Agent
+### Research Agent
 
 Autonomous research workflows combining search, retrieval, analysis and memory.
 
-Scheduling Agent
+### Scheduling Agent
 
 Agent capable of coordinating calendars, availability and reminders.
 
-Data Agent
+### Data Agent
 
 AI interface over datasets, databases and analytical tools.
 
-🔬 Research Questions
+---
+
+# 🔬 Research Questions
 
 Agency Brain is also a laboratory for exploring questions such as:
 
-How should agent memory be structured?
+- How should agent memory be structured?
+- When should information become persistent?
+- How should agents select tools?
+- How much autonomy should an agent have?
+- How do we separate model reasoning from business rules?
+- When are multiple agents better than one?
+- How should agent identity and memory migrate between runtimes?
+- Can agent state survive a change of model provider?
+- Can one persistent identity operate through multiple interfaces?
+- How should agent permissions evolve?
+- What should remain deterministic?
+- What should remain probabilistic?
 
-When should information become persistent?
+---
 
-How should agents select tools?
+# 🧭 Long-Term Direction
 
-How much autonomy should an agent have?
+The long-term idea is not simply one bot, but potentially:
 
-How do we separate model reasoning from business rules?
-
-When are multiple agents better than one?
-
-How should agent identity and memory migrate between runtimes?
-
-Can agent state survive a change of model provider?
-
-Can one persistent identity operate through multiple interfaces?
-
-How should agent permissions evolve?
-
-What should remain deterministic?
-
-What should remain probabilistic?
-🧭 Long-Term Direction
-
-The long-term idea is not simply:
-
-one bot
-
-but potentially:
-
+```
                     AGENCY BRAIN
                          │
                Shared Intelligence Core
@@ -1040,34 +1135,35 @@ but potentially:
         └────────────────┼────────────────┘
                          │
                      same brain
+```
 
-The interface may change.
-
-The provider may change.
-
-The model may change.
+The interface may change. The provider may change. The model may change.
 
 The agent's useful accumulated context and architecture should not necessarily disappear with them.
 
-🧱 What Agency Brain Is NOT
+---
+
+# 🧱 What Agency Brain Is NOT
 
 Agency Brain is not currently presented as:
 
-a production-ready framework
-a replacement for every agent framework
-a finished autonomous operating system
-a benchmark winner
-a fully autonomous general intelligence system
+- a production-ready framework
+- a replacement for every agent framework
+- a finished autonomous operating system
+- a benchmark winner
+- a fully autonomous general intelligence system
 
-It is an evolving engineering project focused on understanding and building reusable agent infrastructure.
+It is an **evolving engineering project** focused on understanding and building reusable agent infrastructure.
 
-Transparency matters.
+**Transparency matters.**
 
-🧑‍💻 Contributing
+---
+
+# 🧑‍💻 Contributing
 
 Ideas, experiments, architecture discussions and contributions are welcome.
 
-Recommended process:
+## Recommended Process
 
 1. Fork
 2. Create branch
@@ -1076,153 +1172,156 @@ Recommended process:
 5. Add tests when applicable
 6. Open pull request
 
-Example:
+**Example:**
 
+```bash
 git checkout -b feat/vector-memory
-
-Commit:
-
 git commit -m "feat: add vector memory provider"
-
-Push:
-
 git push origin feat/vector-memory
-🌿 Git Convention
+```
 
-Suggested commit convention:
+---
 
-feat:     new capability
-fix:      bug fix
-docs:     documentation
-refactor: architecture improvement
-test:     tests
-chore:    maintenance
-perf:     performance
-build:    build / Docker / dependencies
+# 🌿 Git Convention
 
-Examples:
+**Suggested commit convention:**
 
+| Prefix | Meaning |
+|--------|---------|
+| `feat:` | new capability |
+| `fix:` | bug fix |
+| `docs:` | documentation |
+| `refactor:` | architecture improvement |
+| `test:` | tests |
+| `chore:` | maintenance |
+| `perf:` | performance |
+| `build:` | build / Docker / dependencies |
+
+**Examples:**
+
+```bash
 feat: add persistent session storage
 feat: register calendar tool
 docs: explain agent architecture
 refactor: extract provider interface
 test: add memory retrieval tests
 fix: handle missing session state
-🤝 Contributions Philosophy
+```
 
-Prefer:
+---
 
-small
-clear
-modular
-documented
-testable
-reusable
+# 🤝 Contributions Philosophy
 
-over:
+**Prefer:**
 
-large
-opaque
-tightly coupled
-one-off implementations
-📖 Documentation
+- small
+- clear
+- modular
+- documented
+- testable
+- reusable
+
+**Over:**
+
+- large
+- opaque
+- tightly coupled
+- one-off implementations
+
+---
+
+# 📖 Documentation
 
 Planned documentation:
 
-Document	Purpose
-architecture.md	System architecture
-agents.md	Agent lifecycle
-memory.md	Memory architecture
-tools.md	Tool registry
-providers.md	LLM providers
-sessions.md	Session management
-security.md	Security boundaries
-integrations.md	External integrations
-roadmap.md	Development roadmap
-🧠 Architectural Rule
+| Document | Purpose |
+|----------|---------|
+| `architecture.md` | System architecture |
+| `agents.md` | Agent lifecycle |
+| `memory.md` | Memory architecture |
+| `tools.md` | Tool registry |
+| `providers.md` | LLM providers |
+| `sessions.md` | Session management |
+| `security.md` | Security boundaries |
+| `integrations.md` | External integrations |
+| `roadmap.md` | Development roadmap |
+
+---
+
+# 🧠 Architectural Rule
 
 One of the project's core rules:
 
-The LLM is a component of the system — not the system itself.
+> **The LLM is a component of the system — not the system itself.**
 
 The architecture should survive:
 
-model changes
-provider changes
-API changes
-tool changes
-interface changes
-deployment changes
+- model changes
+- provider changes
+- API changes
+- tool changes
+- interface changes
+- deployment changes
 
 without requiring the entire project to be rewritten.
 
-⭐ If You Find This Interesting
+---
+
+# ⭐ If You Find This Interesting
 
 If you're also exploring:
 
-AI Agents
-RAG
-Agent Memory
-Tool Calling
-Agentic AI
-Automation
-LLM infrastructure
-AI SaaS
-Persistent agents
-AI architecture
+- AI Agents
+- RAG
+- Agent Memory
+- Tool Calling
+- Agentic AI
+- Automation
+- LLM infrastructure
+- AI SaaS
+- Persistent agents
+- AI architecture
 
-consider starring the repository.
+**consider starring the repository.**
 
-<div align="center">
+---
 
+# 👤 Author
 
-
-
-
-
-</div>
-👤 Author
-<div align="center">
-Fabrizio Condes Ballesteros
+**Fabrizio Condes Ballesteros**
 
 Information Technology · Artificial Intelligence · Agents · Software · Data
 
+---
 
+# 📜 License
 
-
-</div>
-📜 License
-
-This project is currently under active experimentation.
+This project is currently under **active experimentation**.
 
 Before broader distribution or external contribution, define the final open-source license in the repository.
 
-Common options include:
+**Common options include:**
 
-MIT
-Apache-2.0
-BSD-3-Clause
+- MIT
+- Apache-2.0
+- BSD-3-Clause
 
 Do not assume licensing rights for external dependencies included or integrated with this project.
 
+---
+
 <div align="center"> <br>
-🧠 AGENCY BRAIN
-Memory gives agents continuity.
-Tools give them capability.
-Architecture gives them a future.
-<br>
 
+🧠 **AGENCY BRAIN**
 
+*Memory gives agents continuity.*
 
+*Tools give them capability.*
 
-
-
-
-
-
+*Architecture gives them a future.*
 
 <br>
 
 Built as an exploration of what comes after the chatbot.
 
-</div> ```
+</div>
