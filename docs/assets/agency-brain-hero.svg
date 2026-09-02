@@ -1,0 +1,110 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="44%" r="70%">
+      <stop offset="0%" stop-color="#102033"/>
+      <stop offset="58%" stop-color="#08131F"/>
+      <stop offset="100%" stop-color="#030812"/>
+    </radialGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#82FFF3"/>
+      <stop offset="40%" stop-color="#21E7DF"/>
+      <stop offset="100%" stop-color="#0786C2"/>
+    </linearGradient>
+    <linearGradient id="cyanDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12CDE1"/>
+      <stop offset="100%" stop-color="#075B9B"/>
+    </linearGradient>
+    <linearGradient id="lens" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17324E"/>
+      <stop offset="30%" stop-color="#081526"/>
+      <stop offset="100%" stop-color="#01050A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" rx="38" fill="url(#bg)"/>
+
+  <!-- Tech decoration -->
+  <g stroke="#078ED1" stroke-width="4" opacity=".42" fill="none">
+    <path d="M88 360H190L228 322H318"/>
+    <path d="M882 304H982L1025 347H1112"/>
+    <path d="M90 842H192L232 802H310"/>
+    <path d="M888 830H974L1020 784H1110"/>
+  </g>
+  <g fill="#00D9FF" opacity=".75">
+    <rect x="130" y="174" width="10" height="10"/><rect x="207" y="262" width="14" height="14"/>
+    <rect x="1042" y="192" width="11" height="11"/><rect x="1010" y="364" width="14" height="14"/>
+    <rect x="1048" y="714" width="10" height="10"/><rect x="145" y="724" width="12" height="12"/>
+    <rect x="273" y="950" width="9" height="9"/><rect x="928" y="936" width="13" height="13"/>
+  </g>
+  <g stroke="#6FFFF4" stroke-width="6" stroke-linecap="round" opacity=".82">
+    <path d="M173 213V259M150 236H196"/><path d="M1017 206V244M998 225H1036"/><path d="M1030 755V797M1009 776H1051"/>
+  </g>
+
+  <!-- Halo and floor -->
+  <circle cx="600" cy="565" r="408" fill="none" stroke="#00E5C4" stroke-width="4" opacity=".14"/>
+  <ellipse cx="600" cy="1020" rx="270" ry="34" fill="#00D9FF" opacity=".10"/>
+  <ellipse cx="600" cy="1018" rx="154" ry="13" fill="#24EDE3" opacity=".25"/>
+
+  <!-- Arms -->
+  <path d="M331 671C267 704 227 765 238 829C248 889 297 929 341 909C380 892 391 846 363 817C339 793 330 760 342 725" fill="none" stroke="url(#cyan)" stroke-width="62" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M868 690C928 725 961 783 950 839C938 899 889 930 846 909C808 890 799 846 827 819C849 798 861 767 853 733" fill="none" stroke="url(#cyan)" stroke-width="62" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Brain silhouette built from lobes -->
+  <g fill="url(#cyan)" stroke="#0A76AC" stroke-width="10">
+    <circle cx="381" cy="441" r="118"/><circle cx="461" cy="352" r="123"/><circle cx="581" cy="325" r="126"/>
+    <circle cx="704" cy="346" r="126"/><circle cx="808" cy="416" r="121"/><circle cx="850" cy="530" r="122"/>
+    <circle cx="823" cy="650" r="119"/><circle cx="735" cy="741" r="119"/><circle cx="610" cy="772" r="126"/>
+    <circle cx="482" cy="746" r="118"/><circle cx="386" cy="665" r="120"/><circle cx="348" cy="548" r="118"/>
+    <circle cx="507" cy="487" r="125"/><circle cx="678" cy="495" r="128"/><circle cx="594" cy="609" r="145"/>
+  </g>
+
+  <!-- Inner brain grooves -->
+  <g fill="none" stroke="#087DB3" stroke-width="19" stroke-linecap="round" opacity=".88">
+    <path d="M369 411C354 363 395 328 437 343C447 299 500 284 534 312"/>
+    <path d="M552 305C585 275 633 282 654 318C687 286 735 300 752 341"/>
+    <path d="M766 352C812 337 844 373 835 413C882 417 899 458 880 491"/>
+    <path d="M330 492C300 531 315 574 352 589C321 622 332 668 370 687"/>
+    <path d="M874 514C903 549 890 590 854 607C880 642 861 683 824 698"/>
+    <path d="M397 704C384 744 421 773 455 758C474 797 520 804 548 774"/>
+    <path d="M654 780C684 810 729 796 744 759C784 774 820 744 812 706"/>
+    <path d="M440 461C470 430 514 445 514 485C545 456 584 472 581 512"/>
+    <path d="M633 442C659 414 701 423 710 462C744 439 782 462 774 498"/>
+  </g>
+  <g fill="none" stroke="#8AFFF4" stroke-width="9" stroke-linecap="round" opacity=".38">
+    <path d="M356 377C378 337 414 323 446 330"/><path d="M552 287C582 270 613 273 635 296"/><path d="M764 330C800 320 831 339 843 368"/>
+  </g>
+
+  <!-- Lower brain stem -->
+  <path d="M490 808C513 891 558 935 609 949C664 936 707 891 729 808C688 825 648 834 607 834C567 834 529 826 490 808Z" fill="url(#cyanDark)" stroke="#26DCD9" stroke-width="8"/>
+  <path d="M536 849C560 875 585 888 610 895C639 887 665 872 689 848" fill="none" stroke="#12CFD6" stroke-width="14" stroke-linecap="round"/>
+  <path d="M555 886C574 905 593 916 610 921C630 916 649 904 668 884" fill="none" stroke="#063E72" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Eyebrows: sly / confident -->
+  <path d="M365 488C411 447 474 449 522 481" fill="none" stroke="#03070D" stroke-width="29" stroke-linecap="round"/>
+  <path d="M672 479C716 446 778 446 829 486" fill="none" stroke="#03070D" stroke-width="29" stroke-linecap="round"/>
+
+  <!-- Sunglasses -->
+  <rect x="324" y="514" width="267" height="202" rx="47" fill="url(#lens)" stroke="#010409" stroke-width="20"/>
+  <rect x="609" y="514" width="267" height="202" rx="47" fill="url(#lens)" stroke="#010409" stroke-width="20"/>
+  <path d="M584 561C595 551 606 549 620 561" stroke="#010409" stroke-width="25" stroke-linecap="round"/>
+  <path d="M325 557L283 545" stroke="#010409" stroke-width="23" stroke-linecap="round"/>
+  <path d="M875 557L917 545" stroke="#010409" stroke-width="23" stroke-linecap="round"/>
+  <!-- reflections -->
+  <path d="M352 539H475L389 676H347C334 676 325 665 325 651V572C325 554 336 543 352 539Z" fill="#42CAEF" opacity=".26"/>
+  <path d="M637 539H760L674 676H632C619 676 610 665 610 651V572C610 554 621 543 637 539Z" fill="#42CAEF" opacity=".26"/>
+  <rect x="348" y="535" width="34" height="12" rx="6" fill="#57FFF2"/>
+  <rect x="820" y="535" width="34" height="12" rx="6" fill="#57FFF2"/>
+
+  <!-- Smirk -->
+  <path d="M472 762C532 798 613 805 688 768" fill="none" stroke="#02070D" stroke-width="17" stroke-linecap="round"/>
+  <path d="M687 768C704 755 714 743 722 730" fill="none" stroke="#02070D" stroke-width="17" stroke-linecap="round"/>
+  <path d="M485 761C537 788 604 793 666 775" fill="none" stroke="#8CFFF4" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+
+  <!-- Left hand tipping glasses -->
+  <path d="M339 707C307 686 294 650 310 625C326 600 359 602 374 624C392 650 375 691 339 707Z" fill="#27E1DA" stroke="#086EA8" stroke-width="8"/>
+  <path d="M315 624C291 596 291 564 313 553C334 542 356 557 357 582" fill="none" stroke="#49F3E8" stroke-width="23" stroke-linecap="round"/>
+
+  <!-- Right fist -->
+  <path d="M866 864C835 867 811 846 814 817C817 789 846 772 873 783C903 796 912 832 891 853C884 860 875 863 866 864Z" fill="#25DAD6" stroke="#086EA8" stroke-width="8"/>
+</svg>
