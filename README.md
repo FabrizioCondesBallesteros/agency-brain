@@ -5,7 +5,7 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/AGENCY_BRAIN-HERO-00E5C4?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI0MCIgcj0iMjUiIGZpbGw9IiMwMEU1QzQiLz48cmVjdCB4PSIzNSIgeT0iNDUiIHdpZHRoPSIzMCIgaGVpZ2h0PSIyMCIgcng9IjIiIGZpbGw9IiMwMEQ5RkYiLz48L3N2Zz4=" alt="Agency Brain" width="520" height="200"/>
+<img src="./docs/assets/agency-brain-hero.png" alt="Agency Brain" width="520"/>
 
 # Agency Brain 🧠
 
