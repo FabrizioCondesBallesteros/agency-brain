@@ -3,7 +3,7 @@
 <img
   src="docs/assets/agency-brain-hero.svg"
   alt="Agency Brain — Persistent AI Agent Architecture"
-  width="520"
+  width="290"
 />
 
 # Agency Brain 🧠
