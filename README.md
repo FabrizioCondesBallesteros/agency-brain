@@ -1,11 +1,10 @@
-<!-- ============================================================
-  AGENCY BRAIN
-  Modular architecture for persistent, tool-using AI agents.
-============================================================= -->
-
 <div align="center">
 
-<img src="./docs/assets/agency-brain-hero.png" alt="Agency Brain" width="520"/>
+<img
+  src="docs/assets/agency-brain-hero.svg"
+  alt="Agency Brain — Persistent AI Agent Architecture"
+  width="520"
+/>
 
 # Agency Brain 🧠
 
@@ -13,7 +12,7 @@
 
 **Memory · Tools · RAG · Automation · Providers · Sessions · Integrations**
 
-<br>
+</div>
 
 [![STATUS](https://img.shields.io/badge/STATUS-ACTIVE_DEVELOPMENT-00D9FF?style=for-the-badge&labelColor=0B0F17)](https://github.com/FabrizioCondesBallesteros/agency-brain)
 [![PYTHON](https://img.shields.io/badge/PYTHON-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=0B0F17)](https://www.python.org/)
